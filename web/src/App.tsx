@@ -1,3 +1,4 @@
+import { Widget } from "./components/Widget"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>return nlw</h1>
+      <Widget />
     </div>
   )
 }
