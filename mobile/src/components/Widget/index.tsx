@@ -6,6 +6,7 @@ import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
 
 import { theme } from '../../theme'
 import { styles } from './styles'
+import { Options } from '../Options'
 
 /* import { styles } from './styles.ts' */
 
@@ -32,7 +33,7 @@ function Widget() {
         backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}
       >
-
+        <Options />
       </BottomSheet>
     </>
   )
