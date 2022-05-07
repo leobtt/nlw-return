@@ -37,10 +37,67 @@ export class SubmitFeedback {
     await this.NodemailerEmailAdapter.sendEmail({
       subject: 'Novo feedback',
       body: [
-        `<div style="font-family: sans-serif; font-size: 16px; color: #111"></div>`,
-        `<p>Tipo do feedback: ${type}</p>`,
-        `<p>Comentário: ${comment}</p>`,
-        screenshot ? `<image src='${screenshot}' />` : ``,
+        `<div style="
+            width: 600px;
+            margin: 0 auto;
+          ">
+        `,
+        `
+        <header style="
+          text-align: center;
+          background-color: #8257E5;
+          padding: 50px 0;
+          color: #fff;
+          font-weight: bold;
+          font-size: 30px;
+          box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+          text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+          font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        ">`,
+        `Feedback da aplicação`,
+        `</header>`,
+        `
+        <div style="
+          background-color: #996DFF;
+          padding: 10px 0;
+          color: white;
+          font-size: 10px;
+          text-align: center;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        ">`,
+        `Tipo do feedback:`,
+        ` 
+        <div style="
+          color: yellow;
+          font-weight: bold;
+          font-size: 16px;
+          letter-spacing: .2rem;
+          ">${type}</div>
+        </div>
+        `,
+        `
+        <div style="
+          max-width: 300px;
+          margin: 0 auto;
+          padding-top: 20px;
+        ">
+        `,
+        `
+        <h2 style="text-align:center; font-family: 'Arial', sans-serif;">Relato</h2>
+        `,
+        `<p style="text-align: justify;">${comment}</p> `,
+        `</div>`,
+        `<div style="
+          border: 1px solid #996DFF;
+          margin-top: 40px;
+        "></div>`,
+        screenshot ?
+          `<img src="${screenshot}" alt="feedback" width="600" style="margin: 0 auto;">`
+          :
+          ``,
         `</div>`
       ].join('\n')
     })
