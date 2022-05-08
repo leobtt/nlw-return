@@ -95,7 +95,7 @@ export class SubmitFeedback {
           margin-top: 40px;
         "></div>`,
         screenshot ?
-          `<img src="${screenshot}" alt="feedback" width="600" style="margin: 0 auto;">`
+          `<img src="${screenshot}"/>`
           :
           ``,
         `</div>`
@@ -103,3 +103,4 @@ export class SubmitFeedback {
     })
   }
 }
+
