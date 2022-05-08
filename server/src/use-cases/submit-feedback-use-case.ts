@@ -46,10 +46,10 @@ export class SubmitFeedback {
         <header style="
           text-align: center;
           background-color: #8257E5;
-          padding: 50px 0;
+          padding: 60px 0;
           color: #fff;
           font-weight: bold;
-          font-size: 30px;
+          font-size: 32px;
           box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
           text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
           font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -73,7 +73,7 @@ export class SubmitFeedback {
         <div style="
           color: yellow;
           font-weight: bold;
-          font-size: 16px;
+          font-size: 20px;
           letter-spacing: .2rem;
           ">${type}</div>
         </div>
@@ -88,7 +88,7 @@ export class SubmitFeedback {
         `
         <h2 style="text-align:center; font-family: 'Arial', sans-serif;">Relato</h2>
         `,
-        `<p style="text-align: justify;">${comment}</p> `,
+        `<p style="text-align: justify;font-size: 18px;">${comment}</p> `,
         `</div>`,
         `<div style="
           border: 1px solid #996DFF;
