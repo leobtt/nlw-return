@@ -95,7 +95,7 @@ export class SubmitFeedback {
           margin-top: 40px;
         "></div>`,
         screenshot ?
-          `<img src="${screenshot}"/>`
+          `<image src="${screenshot}" width="800" style="margin: 0 auto;" />`
           :
           ``,
         `</div>`
